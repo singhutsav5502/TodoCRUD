@@ -69,6 +69,7 @@ def get():
     if request.method=="GET":
         task = todos.query.get_or_404(id)
         return render_template('get.html', task = task)
+
     else:
         redirect('/')
 
